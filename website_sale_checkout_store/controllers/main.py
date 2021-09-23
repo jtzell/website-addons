@@ -3,10 +3,10 @@
 # Copyright 2017 Dmytro Katyukha <https://github.com/katyukha>
 # Copyright 2017-2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 
-from odoo.addons.website_sale.controllers.main import WebsiteSale
+from flectra.addons.website_sale.controllers.main import WebsiteSale
 
 
 class WebsiteSaleExtended(WebsiteSale):

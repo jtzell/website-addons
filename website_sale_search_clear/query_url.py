@@ -1,6 +1,6 @@
 import werkzeug
 
-from odoo.addons.website_sale.controllers import main as main_file
+from flectra.addons.website_sale.controllers import main as main_file
 
 
 class QueryURL(object):

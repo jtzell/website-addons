@@ -5,7 +5,7 @@
 Installation
 ============
 
-* `Install <https://odoo-development.readthedocs.io/en/latest/odoo/usage/install-module.html>`__ this module in a usual way
+* `Install <https://flectra-development.readthedocs.io/en/latest/flectra/usage/install-module.html>`__ this module in a usual way
 
 Usage
 =====
@@ -23,7 +23,7 @@ Switching websites in backend
 
 If you have several Websites with the same company, you can filter Leads by Website
 
-* `Activate Developer Mode <https://odoo-development.readthedocs.io/en/latest/odoo/usage/debug-mode.html>`__
+* `Activate Developer Mode <https://flectra-development.readthedocs.io/en/latest/flectra/usage/debug-mode.html>`__
 * Open menu ``[[ Settings ]] >> Users & Companies >> Users
 * Switch to your user
 * Click ``[Edit]``

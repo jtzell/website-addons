@@ -25,7 +25,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/11.0/website_multi_company_crm/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/11.0/website_multi_company_crm/
 
 
-Tested on `Odoo 11.0 <https://github.com/odoo/odoo/commit/dc61861f90d15797b19f8ebddfb0c8a66d0afa88>`_
+Tested on `Flectra 11.0 <https://github.com/flectra/flectra/commit/dc61861f90d15797b19f8ebddfb0c8a66d0afa88>`_

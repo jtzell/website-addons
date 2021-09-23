@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 
-from odoo import fields
-from odoo.tests.common import TransactionCase
+from flectra import fields
+from flectra.tests.common import TransactionCase
 
 
 class TestCase(TransactionCase):

@@ -4,8 +4,8 @@
 
 Multi Website support in eCommerce.
 
-Module is available at Odoo Apps Store:
-https://www.odoo.com/apps/modules/13.0/website_multi_company_sale/
+Module is available at Flectra Apps Store:
+https://www.flectra.com/apps/modules/13.0/website_multi_company_sale/
 
     We do love FOSS, but sometimes we need to eat ¯\\_(ツ)_/¯
 

@@ -10,7 +10,7 @@
  Upload Multiple Images at Once
 ================================
 
-By default, you can upload only a single image to product at once in Odoo. The module allows to upload multiple images at a time.
+By default, you can upload only a single image to product at once in Flectra. The module allows to upload multiple images at a time.
 
 Questions?
 ==========
@@ -24,7 +24,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/11.0/multi_attachment_product_image/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/11.0/multi_attachment_product_image/
 
 
-Tested on `Odoo 11.0 <https://github.com/odoo/odoo/commit/97dbb8c6af4c6af0622497b276bdfb40ee0a3215>`_
+Tested on `Flectra 11.0 <https://github.com/flectra/flectra/commit/97dbb8c6af4c6af0622497b276bdfb40ee0a3215>`_

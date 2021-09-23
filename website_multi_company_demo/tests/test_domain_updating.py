@@ -1,6 +1,6 @@
 import re
 
-from odoo.tests import common
+from flectra.tests import common
 
 from ..models.res_users import WEBSITE_RE, WEBSITE_REFS
 
@@ -19,8 +19,9 @@ class TestDomainUpdating(common.HttpCase):
             self.assertTrue(bool(m))
             key = m.group(1)
             website_domains[wref] = "build-123." + key + ".runbot.example.com"
-        uid = self.registry["res.users"].authenticate(db_name, "admin", "admin", env)
-        # since Odoo 12.0 admin user is 2
+        uid = self.registry["res.users"].authenticate(
+            db_name, "admin", "admin", env)
+        # since Flectra 12.0 admin user is 2
         self.assertEqual(uid, 2)
 
         for wref in WEBSITE_REFS:

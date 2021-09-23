@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <template id="cart" inherit_id="website_sale.cart">
         <xpath expr="//h1[@class='mb32']" position="after">
             <t t-if="warning_msg">
@@ -9,4 +9,4 @@
             </t>
         </xpath>
     </template>
-</odoo>
+</flectra>

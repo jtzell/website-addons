@@ -3,7 +3,7 @@ from datetime import datetime
 
 from dateutil.relativedelta import relativedelta
 
-from odoo import api, fields, models, tools
+from flectra import api, fields, models, tools
 
 _INTERVALS = {
     "hours": lambda interval: relativedelta(hours=interval),

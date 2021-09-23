@@ -1,4 +1,4 @@
-from odoo.tests.common import TransactionCase
+from flectra.tests.common import TransactionCase
 
 
 class TestWebsiteSeoUrlProduct(TransactionCase):
@@ -18,5 +18,6 @@ class TestWebsiteSeoUrlProduct(TransactionCase):
         self.product2.write(vals)
         self.assertEqual(
             1,
-            self.env["product.product"].search_count([("seo_url", "=", SEO_URL_VALUE)]),
+            self.env["product.product"].search_count(
+                [("seo_url", "=", SEO_URL_VALUE)]),
         )

@@ -1,5 +1,5 @@
-from odoo import fields, models
-from odoo.http import request
+from flectra import fields, models
+from flectra.http import request
 
 
 class Event(models.Model):

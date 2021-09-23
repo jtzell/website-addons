@@ -1,11 +1,11 @@
 Website debranding
 ==================
 
-Removes references to odoo.com.
+Removes references to flectra.com.
 
 
-Module is available at Odoo Apps Store:
-https://www.odoo.com/apps/modules/13.0/website_debranding/
+Module is available at Flectra Apps Store:
+https://www.flectra.com/apps/modules/13.0/website_debranding/
 
     We do love FOSS, but sometimes we need to eat ¯\\_(ツ)_/¯
 

@@ -5,12 +5,12 @@
 Installation
 ============
 
-* `Install <https://odoo-development.readthedocs.io/en/latest/odoo/usage/install-module.html>`__ this module in a usual way
+* `Install <https://flectra-development.readthedocs.io/en/latest/flectra/usage/install-module.html>`__ this module in a usual way
 
 Configuration
 =============
 
-See documentation for `website_event_attendee_fields <https://apps.odoo.com/apps/modules/10.0/website_event_attendee_fields/>`__
+See documentation for `website_event_attendee_fields <https://apps.flectra.com/apps/modules/10.0/website_event_attendee_fields/>`__
 
 Ticket transferring configuration
 ---------------------------------

@@ -2,12 +2,12 @@
 # Copyright 2019 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # License MIT (https://opensource.org/licenses/MIT).
 
-import odoo.tests
+import flectra.tests
 
 
-@odoo.tests.common.at_install(True)
-@odoo.tests.common.post_install(True)
-class TestUi(odoo.tests.HttpCase):
+@flectra.tests.common.at_install(True)
+@flectra.tests.common.post_install(True)
+class TestUi(flectra.tests.HttpCase):
     def enable_environment(self, template_id):
         self.env["ir.ui.view"].search(
             [("active", "=", False), ("key", "=", template_id)]
@@ -34,7 +34,7 @@ class TestUi(odoo.tests.HttpCase):
         self.phantom_js(
             url,
             code,
-            "odoo.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
+            "flectra.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
             login="demo",
         )
 
@@ -53,7 +53,7 @@ class TestUi(odoo.tests.HttpCase):
         self.phantom_js(
             url,
             code,
-            "odoo.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
+            "flectra.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
             login="demo",
         )
 
@@ -72,6 +72,6 @@ class TestUi(odoo.tests.HttpCase):
         self.phantom_js(
             url,
             code,
-            "odoo.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
+            "flectra.__DEBUG__.services['web_tour.tour'].tours.shop.ready",
             login="demo",
         )

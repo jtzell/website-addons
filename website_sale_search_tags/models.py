@@ -1,4 +1,4 @@
-from odoo import api, models
+from flectra import api, models
 
 
 class Product(models.Model):

@@ -1,8 +1,8 @@
-import odoo.tests
+import flectra.tests
 
 
-@odoo.tests.tagged("at_install", "post_install")
-class TestUi(odoo.tests.HttpCase):
+@flectra.tests.tagged("at_install", "post_install")
+class TestUi(flectra.tests.HttpCase):
     def test_open_url(self):
         # wait till page loaded
         code = """

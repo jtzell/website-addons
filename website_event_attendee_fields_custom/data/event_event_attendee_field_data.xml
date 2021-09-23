@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <record id="attendee_field_firstname" model="event.event.attendee_field">
         <field name="field_id" ref="partner_firstname.field_res_partner_firstname" />
         <field name="form_type">text</field>
@@ -39,4 +39,4 @@
         <field name="form_type">date</field>
         <field name="width">4</field>
     </record>
-</odoo>
+</flectra>

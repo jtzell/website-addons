@@ -2,7 +2,7 @@
 # License MIT (https://opensource.org/licenses/MIT).
 
 
-from odoo import models
+from flectra import models
 
 
 class IrAttachmentWebsiteBackground(models.Model):

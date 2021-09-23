@@ -19,7 +19,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/13.0/website_sale_search_clear/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/13.0/website_sale_search_clear/
 
 
-Tested on `Odoo 13.0 <https://github.com/odoo/odoo/commit/acb26cf02f554009ba99510acc5631d29616dd10>`_
+Tested on `Flectra 13.0 <https://github.com/flectra/flectra/commit/acb26cf02f554009ba99510acc5631d29616dd10>`_

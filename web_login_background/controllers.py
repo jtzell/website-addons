@@ -1,8 +1,8 @@
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 
-from odoo.addons.auth_signup.controllers.main import AuthSignupHome
-from odoo.addons.web.controllers.main import Home
+from flectra.addons.auth_signup.controllers.main import AuthSignupHome
+from flectra.addons.web.controllers.main import Home
 
 
 class Background(Home):

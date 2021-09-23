@@ -24,7 +24,7 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/website_event_attendee_signup/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/website_event_attendee_signup/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/c5df78f38bd476bc225778d1c30ff3061e9b23bc>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/c5df78f38bd476bc225778d1c30ff3061e9b23bc>`_

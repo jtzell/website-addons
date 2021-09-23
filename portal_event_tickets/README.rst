@@ -63,7 +63,7 @@ We don't split module in two where one doesn't depend on ``event_sale`` (e.g. ``
 portal_event
 ============
 
-``portal_event`` should be more proper name for this module, but it's occupied by repository odoo/odoo and which makes it impossible to use it in odoo apps store.
+``portal_event`` should be more proper name for this module, but it's occupied by repository flectra/flectra and which makes it impossible to use it in flectra apps store.
 
 
 Questions?
@@ -79,7 +79,7 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/portal_event_tickets/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/portal_event_tickets/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/6c1c1f6e9e03322771169b920d3c14c5e33111e9>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/6c1c1f6e9e03322771169b920d3c14c5e33111e9>`_

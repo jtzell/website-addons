@@ -5,7 +5,7 @@
     # Copyright 2016-2017 Ivan Yelizariev <https://it-projects.info/team/yelizariev>
     # Copyright 2017 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
     # License MIT (https://opensource.org/licenses/MIT).-->
-<odoo noupdate="0">
+<flectra noupdate="0">
     <template
         id="website_sale_checkout_store_assets_frontend"
         name="website_sale_checkout_store assets"
@@ -282,7 +282,7 @@
     </template>
     <template id="payment" inherit_id="website_sale.payment" name="Payment">
         <xpath expr="//div[@id='payment_method']" position="replace">
-            <!-- based on https://github.com/odoo/odoo/blob/97f89dc0484902c58dec5dbb9de65f17661163f4/addons/website_sale/views/templates.xml#L1340 -->
+            <!-- based on https://github.com/flectra/flectra/blob/97f89dc0484902c58dec5dbb9de65f17661163f4/addons/website_sale/views/templates.xml#L1340 -->
             <div
                 id="payment_method"
                 class="mt-3"
@@ -305,7 +305,7 @@
                     <t t-set="back_button_link" t-value="'/shop/cart'" />
                 </t>
             </div>
-            <!-- based on https://github.com/odoo/odoo/blob/97f89dc0484902c58dec5dbb9de65f17661163f4/addons/website_sale/views/templates.xml#L1367 -->
+            <!-- based on https://github.com/flectra/flectra/blob/97f89dc0484902c58dec5dbb9de65f17661163f4/addons/website_sale/views/templates.xml#L1367 -->
             <div
                 class="js_payment mt-3"
                 t-if="(not website_sale_order.amount_total) and bill_enabled=='1'"
@@ -452,4 +452,4 @@
             </div>
         </xpath>
     </template>
-</odoo>
+</flectra>

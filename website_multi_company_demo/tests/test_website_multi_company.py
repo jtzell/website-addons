@@ -1,5 +1,5 @@
-from odoo.api import Environment
-from odoo.tests.common import (
+from flectra.api import Environment
+from flectra.tests.common import (
     SingleTransactionCase,
     at_install,
     get_db_name,
@@ -17,14 +17,16 @@ class TestWebsiteMultiCompany(SingleTransactionCase):
     def _test_website_price_difference_is_accessible(self, env):
         website = env.ref(WEBSITE_REFS[0])
         products = env["product.template"].search(
-            [("company_id", "=", website.company_id.id)] + website.sale_product_domain()
+            [("company_id", "=", website.company_id.id)] +
+            website.sale_product_domain()
         )
         product = products[0]
         # make sure, it does not throw exception
         product.website_price_difference  # pylint: disable=pointless-statement
 
     def test_website_price_difference_is_accessible_for_demo_user(self):
-        uid = self.registry["res.users"].authenticate(db_name, "demo", "demo", {})
+        uid = self.registry["res.users"].authenticate(
+            db_name, "demo", "demo", {})
         with self.cursor() as cr:
             env = Environment(cr, uid, {})
             self._test_website_price_difference_is_accessible(env)

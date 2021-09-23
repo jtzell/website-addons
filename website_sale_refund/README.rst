@@ -32,7 +32,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/website_sale_refund/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/website_sale_refund/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/60801e537575d08797137d3e34fa2ee492c75f1b>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/60801e537575d08797137d3e34fa2ee492c75f1b>`_

@@ -4,8 +4,8 @@
 
 Allows to set up multi-website and handles requests in a different company context. Later is especially useful for eCommerce to make orders for a different companies.
 
-Module is available at Odoo Apps Store:
-https://www.odoo.com/apps/modules/13.0/website_multi_company/
+Module is available at Flectra Apps Store:
+https://www.flectra.com/apps/modules/13.0/website_multi_company/
 
     We do love FOSS, but sometimes we need to eat ¯\\_(ツ)_/¯
 

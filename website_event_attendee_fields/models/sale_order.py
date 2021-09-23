@@ -1,4 +1,4 @@
-from odoo import models
+from flectra import models
 
 
 class SaleOrder(models.Model):
@@ -15,7 +15,8 @@ class SaleOrder(models.Model):
     ):
         order_lines = False
         if line_id is not False:
-            order_lines = self._cart_find_product_line(product_id, line_id, **kwargs)
+            order_lines = self._cart_find_product_line(
+                product_id, line_id, **kwargs)
             order_line = order_lines and order_lines[0]
 
         if order_line and order_line.event_id and "registration_data" not in kwargs:

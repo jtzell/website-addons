@@ -19,9 +19,9 @@ class TicketTransfer(TourCase):
         # user_portal2 click on the link in email
         self.phantom_js(
             "/",
-            "odoo.__DEBUG__.services['web_tour.tour']"
+            "flectra.__DEBUG__.services['web_tour.tour']"
             ".run('ticket_transfer_receive')",
-            "odoo.__DEBUG__.services['web_tour.tour']"
+            "flectra.__DEBUG__.services['web_tour.tour']"
             ".tours.ticket_transfer_receive.ready",
             login=self.user_portal2.login,
         )

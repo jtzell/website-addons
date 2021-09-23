@@ -8,4 +8,4 @@
 
 * adds results from searching by tags
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/42788fb63b9835340963bfe359820d8428bd6f70>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/42788fb63b9835340963bfe359820d8428bd6f70>`_

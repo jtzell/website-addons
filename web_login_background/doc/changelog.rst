@@ -6,7 +6,7 @@
 `1.0.4`
 -------
 
-- **Fix:** support Odoo EE
+- **Fix:** support Flectra EE
 
 `1.0.3`
 -------
@@ -16,7 +16,7 @@
 `1.0.2`
 -------
 
-- **Fix:** applied new CSS styles according to changes in 12 odoo
+- **Fix:** applied new CSS styles according to changes in 12 flectra
 - **Fix:** changed the process of getting hash for url
 
 `1.0.1`

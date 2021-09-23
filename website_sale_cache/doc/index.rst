@@ -5,7 +5,7 @@
 Installation
 ============
 
-* `Install <https://odoo-development.readthedocs.io/en/latest/odoo/usage/install-module.html>`__
+* `Install <https://flectra-development.readthedocs.io/en/latest/flectra/usage/install-module.html>`__
 
 Configuration
 =============
@@ -21,4 +21,4 @@ Once the categories are cached after first load, the page loading speed will be 
 
 Demo: http://runbot.it-projects.info/demo/website-addons/10.0
 
-HTML Description: https://apps.odoo.com/apps/modules/10.0/website_sale_cache/
+HTML Description: https://apps.flectra.com/apps/modules/10.0/website_sale_cache/

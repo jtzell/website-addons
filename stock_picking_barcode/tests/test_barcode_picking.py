@@ -1,13 +1,13 @@
 # Copyright 2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # License MIT (https://opensource.org/licenses/MIT).
 
-import odoo.tests
-from odoo.api import Environment
+import flectra.tests
+from flectra.api import Environment
 
 
-@odoo.tests.common.at_install(True)
-@odoo.tests.common.post_install(True)
-class TestBarcodePickingUi(odoo.tests.HttpCase):
+@flectra.tests.common.at_install(True)
+@flectra.tests.common.post_install(True)
+class TestBarcodePickingUi(flectra.tests.HttpCase):
     def test_stock_picking_barcode(self):
 
         # needed because tests are run before the module is marked as
@@ -26,7 +26,7 @@ class TestBarcodePickingUi(odoo.tests.HttpCase):
         # caused by a not yet loaded button's action
         self.phantom_js(
             "/web",
-            "odoo.__DEBUG__.services['web_tour.tour'].run('tour_stock_picking_barcode', 1000)",
-            "odoo.__DEBUG__.services['web_tour.tour'].tours.tour_stock_picking_barcode.ready",
+            "flectra.__DEBUG__.services['web_tour.tour'].run('tour_stock_picking_barcode', 1000)",
+            "flectra.__DEBUG__.services['web_tour.tour'].tours.tour_stock_picking_barcode.ready",
             login="admin",
         )

@@ -1,14 +1,14 @@
 import logging
 
-from odoo import _, http
-from odoo.exceptions import AccessError
-from odoo.fields import Date
-from odoo.http import request
+from flectra import _, http
+from flectra.exceptions import AccessError
+from flectra.fields import Date
+from flectra.http import request
 
-from odoo.addons.website.models.website import slug
-from odoo.addons.website_event.controllers.main import WebsiteEventController
-from odoo.addons.website_portal.controllers.main import website_account
-from odoo.addons.website_sale.controllers.main import WebsiteSale
+from flectra.addons.website.models.website import slug
+from flectra.addons.website_event.controllers.main import WebsiteEventController
+from flectra.addons.website_portal.controllers.main import website_account
+from flectra.addons.website_sale.controllers.main import WebsiteSale
 
 _logger = logging.getLogger(__name__)
 
@@ -261,7 +261,8 @@ class PortalEvent(website_account):
     )
     def ticket_transfer_receive(self, transfer_ticket=None, **kw):
         if transfer_ticket:
-            ticket = request.env["event.registration"].browse(int(transfer_ticket))
+            ticket = request.env["event.registration"].browse(
+                int(transfer_ticket))
         else:
             # Just take first available ticket. Mostly for unittests
             # Use sudo as portal user doesn't have access
@@ -270,7 +271,8 @@ class PortalEvent(website_account):
                 .sudo()
                 .search(
                     [
-                        ("attendee_partner_id", "=", request.env.user.partner_id.id),
+                        ("attendee_partner_id", "=",
+                         request.env.user.partner_id.id),
                         ("is_transferring", "=", True),
                     ],
                     limit=1,
@@ -309,9 +311,11 @@ class PortalEvent(website_account):
         # handle filled form
 
         receiver = ticket.attendee_partner_id
-        registration = WebsiteEventController()._process_registration_details(kw)[0]
+        registration = WebsiteEventController(
+        )._process_registration_details(kw)[0]
         registration["event_id"] = ticket.event_id.id
-        partner_vals = request.env["event.registration"]._prepare_partner(registration)
+        partner_vals = request.env["event.registration"]._prepare_partner(
+            registration)
         assert not partner_vals.get("email")
 
         receiver.sudo().write(partner_vals)

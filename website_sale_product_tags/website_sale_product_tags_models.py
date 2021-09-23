@@ -1,4 +1,4 @@
-from odoo import api, fields, models
+from flectra import api, fields, models
 
 
 class ProductTag(models.Model):

@@ -1,6 +1,6 @@
 import logging
 
-from odoo import _, api, models
+from flectra import _, api, models
 
 _logger = logging.getLogger(__name__)
 
@@ -14,7 +14,8 @@ class EventRegistration(models.Model):
         if vals.get("email"):
             Partner = self.env["res.partner"]
             email = vals.get("email").replace("%", "").replace("_", "\\_")
-            partner_exists = Partner.search([("email", "=ilike", email)], limit=1)
+            partner_exists = Partner.search(
+                [("email", "=ilike", email)], limit=1)
 
         res = super(EventRegistration, self).create(vals)
 
@@ -51,7 +52,8 @@ class EventRegistration(models.Model):
         """Extend it to pass partner values too (we remove them later in _prepare_partner)
         we skip partner_id field to avoid email field overriding.
         """
-        data = super(EventRegistration, self)._prepare_attendee_values(registration)
+        data = super(EventRegistration,
+                     self)._prepare_attendee_values(registration)
         partner_fields = self.env["res.partner"]._fields
         data.update(
             {

@@ -1,8 +1,8 @@
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 
-from odoo.addons.web.controllers.main import ensure_db
-from odoo.addons.website.controllers.main import Home
+from flectra.addons.web.controllers.main import ensure_db
+from flectra.addons.website.controllers.main import Home
 
 
 class Home(Home):

@@ -55,5 +55,5 @@ docs/_build/
 *~
 *.swp
 
-# odoo
+# flectra
 !static/lib/

@@ -1,4 +1,4 @@
-from odoo import fields, models
+from flectra import fields, models
 
 
 class Website(models.Model):

@@ -13,7 +13,7 @@
 The module allows to cache product website categories and significantly accelerate the page loading with a large number
 of product categories.
 
-When multiple odoo workers are used, the cache is updated for each one separately. So the page may be loaded slowly
+When multiple flectra workers are used, the cache is updated for each one separately. So the page may be loaded slowly
 before updating the cache for each worker. Once the latter is done, the page will be loading faster,
 as far as the advantages of caching allow.
 
@@ -39,7 +39,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/website_sale_cache/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/website_sale_cache/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/1ffe85f1cb3defcbf932138e2fc13f3a81b34787>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/1ffe85f1cb3defcbf932138e2fc13f3a81b34787>`_

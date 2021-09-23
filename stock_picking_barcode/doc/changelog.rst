@@ -24,7 +24,7 @@
 `1.0.1`
 -------
 
-- **PORT** Ported to Odoo 10.
+- **PORT** Ported to Flectra 10.
 
 `1.0.0`
 -------

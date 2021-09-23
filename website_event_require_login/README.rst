@@ -24,7 +24,7 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/website_event_sale_require_login/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/website_event_sale_require_login/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/bbc226cd6cc17c69979f81831a3da8cc668bf064>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/bbc226cd6cc17c69979f81831a3da8cc668bf064>`_

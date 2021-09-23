@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <!-- bikes -->
     <record id="mountain_bike_category" model="product.public.category">
         <field name="name">Mountain bikes</field>
@@ -57,4 +57,4 @@
         <field name="name">Cookbook</field>
         <field name="website_ids" eval="[(4, ref('website_books'), 0)]" />
     </record>
-</odoo>
+</flectra>

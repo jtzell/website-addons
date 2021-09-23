@@ -1,9 +1,9 @@
 # Copyright 2021 Ivan Yelizariev <https://twitter.com/yelizariev>
 # License MIT (https://opensource.org/licenses/MIT).
 
-from odoo import api, models
+from flectra import api, models
 
-from odoo.addons.website.models.website import slugify
+from flectra.addons.website.models.website import slugify
 
 
 class SEOURL(models.AbstractModel):

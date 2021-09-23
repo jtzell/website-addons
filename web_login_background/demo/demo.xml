@@ -1,4 +1,4 @@
-<odoo>
+<flectra>
     <function
         model="ir.config_parameter"
         name="set_param"
@@ -16,4 +16,4 @@
             file="web_login_background/static/img/demo.jpg"
         />
     </record>
-</odoo>
+</flectra>

@@ -1,7 +1,7 @@
-from odoo import _, http
-from odoo.http import request
+from flectra import _, http
+from flectra.http import request
 
-from odoo.addons.website_sale.controllers.main import WebsiteSale
+from flectra.addons.website_sale.controllers.main import WebsiteSale
 
 
 class WebsiteSaleRefund(WebsiteSale):

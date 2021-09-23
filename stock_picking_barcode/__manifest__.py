@@ -5,7 +5,7 @@
 # License MIT (https://opensource.org/licenses/MIT).
 {
     "name": """Barcode scanner for Stock""",
-    "summary": """The module allows you to process Pickings by barcode scanner via special page /barcode/web (the same as it was in odoo 8.0)""",
+    "summary": """The module allows you to process Pickings by barcode scanner via special page /barcode/web (the same as it was in flectra 8.0)""",
     "category": "Warehouse",
     "images": ["images/stock_picking_barcode_main.png"],
     "version": "13.0.1.1.1",

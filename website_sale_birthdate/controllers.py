@@ -1,6 +1,6 @@
 import openerp.addons.website_sale.controllers.main as main
 
-from odoo.http import request
+from flectra.http import request
 
 
 class WebsiteSaleBirthdate(main.WebsiteSale):

@@ -7,9 +7,9 @@
 
 import logging
 
-from odoo.http import request
+from flectra.http import request
 
-from odoo.addons.website_sale.controllers.main import WebsiteSale
+from flectra.addons.website_sale.controllers.main import WebsiteSale
 
 _logger = logging.getLogger(__name__)
 

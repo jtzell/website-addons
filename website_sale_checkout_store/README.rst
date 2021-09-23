@@ -35,9 +35,9 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/12.0/website_sale_checkout_store/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/12.0/website_sale_checkout_store/
 
 
-Notifications on updates: `via Atom <https://github.com/it-projects-llc/website-addons/commits/12.0/website_sale_checkout_store.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/it-projects-llc/website-addons/commits/12.0/website_sale_checkout_store.atom>`_
+Notifications on updates: `via Atom <https://github.com/itpp-labs/website-addons/commits/12.0/website_sale_checkout_store.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/website-addons/commits/12.0/website_sale_checkout_store.atom>`_
 
-Tested on `Odoo 12.0 <https://github.com/odoo/odoo/commit/412117c2a789a24191cda040614d01fe290e77cc>`_
+Tested on `Flectra 12.0 <https://github.com/flectra/flectra/commit/412117c2a789a24191cda040614d01fe290e77cc>`_

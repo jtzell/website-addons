@@ -1,6 +1,6 @@
-from odoo import fields, models
+from flectra import fields, models
 
-import odoo.addons.decimal_precision as dp
+import flectra.addons.decimal_precision as dp
 
 
 class ProductAttributeValue(models.Model):
@@ -65,7 +65,8 @@ class ProductProduct(models.Model):
         if not uom and self._context.get("uom"):
             uom = self.env["product.uom"].browse(self._context["uom"])
         if not currency and self._context.get("currency"):
-            currency = self.env["res.currency"].browse(self._context["currency"])
+            currency = self.env["res.currency"].browse(
+                self._context["currency"])
 
         products = self
         if price_type == "standard_price":

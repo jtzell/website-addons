@@ -6,7 +6,7 @@
  Multi Website Demo
 ====================
 
-If you are looking for *Mult Website* feature use module `Real Multi Website <https://apps.odoo.com/apps/modules/13.0/website_multi_company>`_ instead.
+If you are looking for *Mult Website* feature use module `Real Multi Website <https://apps.flectra.com/apps/modules/13.0/website_multi_company>`_ instead.
 
 Demo-specific updates
 =====================
@@ -31,7 +31,7 @@ Contributors
 
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/13.0/website_multi_company_demo
+Flectra Apps Store: https://apps.flectra.com/apps/modules/13.0/website_multi_company_demo
 
 
-Tested on `Odoo 12.0 <https://github.com/odoo/odoo/commit/0669eddc7e88303f3a97e9f4f834f64fd9a8158c>`_
+Tested on `Flectra 12.0 <https://github.com/flectra/flectra/commit/0669eddc7e88303f3a97e9f4f834f64fd9a8158c>`_

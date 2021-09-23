@@ -49,7 +49,7 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/10.0/website_event_attendee_fields/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/10.0/website_event_attendee_fields/
 
 
-Tested on `Odoo 10.0 <https://github.com/odoo/odoo/commit/51861e889ab7c8795cccc3eaca27b90b62ceb89c>`_
+Tested on `Flectra 10.0 <https://github.com/flectra/flectra/commit/51861e889ab7c8795cccc3eaca27b90b62ceb89c>`_

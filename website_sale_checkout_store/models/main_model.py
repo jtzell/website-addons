@@ -5,7 +5,7 @@
 # Copyright 2017 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # License MIT (https://opensource.org/licenses/MIT).
 
-from odoo import _, api, fields, models
+from flectra import _, api, fields, models
 
 
 class SaleOrder(models.Model):

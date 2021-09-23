@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta
 
-import odoo
-from odoo import api, fields
-from odoo.tests.common import HttpCase
+import flectra
+from flectra import api, fields
+from flectra.tests.common import HttpCase
 
 
-@odoo.tests.common.at_install(True)
-@odoo.tests.common.post_install(True)
+@flectra.tests.common.at_install(True)
+@flectra.tests.common.post_install(True)
 class TourCase(HttpCase):
     def setUp(self):
         super(TourCase, self).setUp()
@@ -124,5 +124,6 @@ class TourCase(HttpCase):
 
         return (
             sale_order,
-            self.env["event.registration"].search([("origin", "=", sale_order.name)]),
+            self.env["event.registration"].search(
+                [("origin", "=", sale_order.name)]),
         )

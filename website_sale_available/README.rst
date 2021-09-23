@@ -14,7 +14,7 @@ Warns a customer and disable the possibility to continue sale if not enough prod
 
 TODO
 ----
-* Check quantity for "Stockable Product" only. See `#104 <https://github.com/it-projects-llc/website-addons/pull/104>`__
+* Check quantity for "Stockable Product" only. See `#104 <https://github.com/itpp-labs/website-addons/pull/104>`__
 
 Questions?
 ==========
@@ -26,14 +26,14 @@ Contributors
 * `Ivan Yelizariev <https://it-projects.info/team/yelizariev>`__
 
       
-      This module is not maintained since Odoo 12.0
+      This module is not maintained since Flectra 12.0
 
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/11.0/website_sale_available/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/11.0/website_sale_available/
 
 
-Notifications on updates: `via Atom <https://github.com/it-projects-llc/website-addons/commits/11.0/website_sale_available.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/it-projects-llc/website-addons/commits/11.0/website_sale_available.atom>`_
+Notifications on updates: `via Atom <https://github.com/itpp-labs/website-addons/commits/11.0/website_sale_available.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/website-addons/commits/11.0/website_sale_available.atom>`_
 
-Tested on `Odoo 11.0 <https://github.com/odoo/odoo/commit/97dbb8c6af4c6af0622497b276bdfb40ee0a3215>`_
+Tested on `Flectra 11.0 <https://github.com/flectra/flectra/commit/97dbb8c6af4c6af0622497b276bdfb40ee0a3215>`_

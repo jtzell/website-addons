@@ -10,7 +10,7 @@
  Login Page Redirection 
 ========================
 
-By default Odoo redirects portal users on `/my` portal dashboard after their success login.
+By default Flectra redirects portal users on `/my` portal dashboard after their success login.
 This module makes redirection to the same page from where logging in process were initiated.
 
 No special settings is needed, just install the module.
@@ -33,8 +33,8 @@ Contributors
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/13.0/website_login_redirect_back/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/13.0/website_login_redirect_back/
 
 Notifications on updates: `via Atom <https://github.com/itpp-labs/website-addons/commits/13.0/website_login_redirect_back.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/13.0/website_login_redirect_back.atom>`_
 
-Tested on `Odoo 13.0 <https://github.com/odoo/odoo/commit/05551281085fd12f83904305aa7bf259f663a834>`_
+Tested on `Flectra 13.0 <https://github.com/flectra/flectra/commit/05551281085fd12f83904305aa7bf259f663a834>`_

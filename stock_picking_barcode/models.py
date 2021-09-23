@@ -5,7 +5,7 @@
 # Copyright 2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
 # License MIT (https://opensource.org/licenses/MIT).
 
-from odoo import api, fields, models
+from flectra import api, fields, models
 
 
 class StockPicking(models.Model):
@@ -17,7 +17,8 @@ class StockPicking(models.Model):
         lot_obj = self.env["stock.production.lot"]
         package_obj = self.env["stock.quant.package"]
         product_obj = self.env["product.product"]
-        pack_op = self.env["stock.move.line"].search([("picking_id", "=", self.id)])
+        pack_op = self.env["stock.move.line"].search(
+            [("picking_id", "=", self.id)])
         stock_location_obj = self.env["stock.location"]
         answer = {"filter_loc": False, "operation_id": False}
         # check if the barcode correspond to a location
@@ -31,7 +32,8 @@ class StockPicking(models.Model):
             answer["filter_loc_id"] = location[0]
         # check if the barcode correspond to a product
         matching_product_ids = product_obj.search(
-            ["|", ("barcode", "=", barcode_str), ("default_code", "=", barcode_str)]
+            ["|", ("barcode", "=", barcode_str),
+             ("default_code", "=", barcode_str)]
         )
         if matching_product_ids:
             op_id = pack_op._increment(
@@ -97,7 +99,8 @@ class StockPicking(models.Model):
 
     def process_product_id_from_ui(self, product_id, op_id, increment=True):
         self.ensure_one()
-        pack_op = self.env["stock.move.line"].search([("picking_id", "=", self.id)])
+        pack_op = self.env["stock.move.line"].search(
+            [("picking_id", "=", self.id)])
         op_obj = pack_op._increment(
             self.id,
             [("product_id", "=", product_id), ("id", "=", op_id)],
@@ -122,7 +125,8 @@ class StockPicking(models.Model):
                 ("result_package_id", "=", False),
             ]
             if operation_filter_ids != []:
-                operation_search_domain.append(("id", "in", operation_filter_ids))
+                operation_search_domain.append(
+                    ("id", "in", operation_filter_ids))
             operation_ids = stock_operation_obj.search(operation_search_domain)
             move_line_ids = []
             if operation_ids:
@@ -173,12 +177,14 @@ class StockPicking(models.Model):
         quant_obj = self.env["stock.quant"]
         for package in self:
             quant_ids = [quant.id for quant in package.quant_ids]
-            quant_obj.write(quant_ids, {"package_id": package.parent_id.id or False})
+            quant_obj.write(
+                quant_ids, {"package_id": package.parent_id.id or False})
             children_package_ids = [
                 child_package.id for child_package in package.children_ids
             ]
             self.write(
-                children_package_ids, {"parent_id": package.parent_id.id or False}
+                children_package_ids, {
+                    "parent_id": package.parent_id.id or False}
             )
         # delete current package since it contains nothing anymore
         self.unlink()
@@ -188,7 +194,8 @@ class StockPicking(models.Model):
 
     def open_barcode_interface(self):
         picking_ids = self.ids
-        final_url = "/barcode/web/#action=stock.ui&picking_id=" + str(picking_ids[0])
+        final_url = "/barcode/web/#action=stock.ui&picking_id=" + \
+            str(picking_ids[0])
         return {
             "type": "ir.actions.act_url",
             "url": final_url,
@@ -210,7 +217,7 @@ class StockPickingType(models.Model):
 
 class StockMoveLine(models.Model):
     _inherit = "stock.move.line"
-    # _inherit = "stock.pack.operation" model name in odoo 10.0
+    # _inherit = "stock.pack.operation" model name in flectra 10.0
 
     product_barcode = fields.Char("Barcode", related="product_id.barcode")
 
@@ -276,7 +283,8 @@ class StockMoveLine(models.Model):
                 var_name, dummy, value = key
                 uom_id = False
                 if var_name == "product_id":
-                    uom_id = self.env["product.product"].browse(value).uom_id.id
+                    uom_id = self.env["product.product"].browse(
+                        value).uom_id.id
                 if var_name == "lot_id":
                     update_dict = {"lot_id": value}
                 else:

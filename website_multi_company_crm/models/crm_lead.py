@@ -2,8 +2,8 @@
 # License MIT (https://opensource.org/licenses/MIT).
 import logging
 
-from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError
+from flectra import _, api, fields, models
+from flectra.exceptions import ValidationError
 
 _logger = logging.getLogger(__name__)
 
@@ -37,4 +37,5 @@ class Lead(models.Model):
                 and record.website_id
                 and not record.website_id.company_id == record.company_id
             ):
-                raise ValidationError(_("Error! Website and Company are mismatched"))
+                raise ValidationError(
+                    _("Error! Website and Company are mismatched"))

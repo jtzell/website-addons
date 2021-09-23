@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<odoo>
+<flectra>
     <template
         id="portal_my_home_menu_event"
         name="Portal layout : event menu entries"
@@ -274,7 +274,7 @@
                 var ticket_id = <t t-esc="ticket.id"/>;
 
                 $('#transfer_email').bind('change', function(e){
-                    odoo.registration_form_onchange_email(e.target, event_id);
+                    flectra.registration_form_onchange_email(e.target, event_id);
                 })
 
              })()
@@ -378,4 +378,4 @@
             </t>
         </p>
     </template>
-</odoo>
+</flectra>

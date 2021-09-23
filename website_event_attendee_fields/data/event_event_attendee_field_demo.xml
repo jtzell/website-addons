@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <record id="attendee_field_name" model="event.event.attendee_field">
         <field name="field_id" ref="event.field_event_registration_name" />
         <field name="form_type">text</field>
@@ -27,4 +27,4 @@
         <field name="width">3</field>
         <field name="is_required" eval="False" />
     </record>
-</odoo>
+</flectra>

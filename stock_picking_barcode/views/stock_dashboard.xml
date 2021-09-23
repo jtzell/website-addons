@@ -3,7 +3,7 @@
     Copyright 2016 Pavel Romanchenko
     Copyright 2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>
     License MIT (https://opensource.org/licenses/MIT).-->
-<odoo>
+<flectra>
     <record id="picking_stock_picking_type_kanban" model="ir.ui.view">
         <field name="name">stock.picking.type.kanban</field>
         <field name="model">stock.picking.type</field>
@@ -28,4 +28,4 @@
             </xpath>
         </field>
     </record>
-</odoo>
+</flectra>

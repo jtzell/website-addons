@@ -1,4 +1,4 @@
-<odoo>
+<flectra>
     <template id="website_login_background_template" inherit_id="website.login_layout">
         <xpath expr="//div[hasclass('oe_website_login_container')]" position="after">
             <t t-if="picture_url">
@@ -35,4 +35,4 @@
             />
         </xpath>
     </template>
-</odoo>
+</flectra>

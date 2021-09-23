@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <template
         id="registration_form"
         inherit_id="website.assets_frontend"
@@ -12,4 +12,4 @@
             />
         </xpath>
     </template>
-</odoo>
+</flectra>

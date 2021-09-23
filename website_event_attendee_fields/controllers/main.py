@@ -1,9 +1,9 @@
 import re
 
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 
-from odoo.addons.website_event.controllers.main import WebsiteEventController
+from flectra.addons.website_event.controllers.main import WebsiteEventController
 
 
 class WebsiteEventControllerExtended(WebsiteEventController):
@@ -48,7 +48,8 @@ class WebsiteEventControllerExtended(WebsiteEventController):
     )
     def check_email(self, event_id, email):
         partner = (
-            request.env["res.partner"].sudo().search([("email", "=", email)], limit=1)
+            request.env["res.partner"].sudo().search(
+                [("email", "=", email)], limit=1)
         )
         if not partner:
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <template
         id="website_login_redirect_back.login"
         inherit_id="web.login"
@@ -9,4 +9,4 @@
             <input type="hidden" name="init_page" t-att-value="init_page" />
         </xpath>
     </template>
-</odoo>
+</flectra>

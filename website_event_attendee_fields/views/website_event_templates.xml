@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <template id="polyfill">
         <!-- solution from https://stackoverflow.com/questions/22983013/how-to-get-html-5-input-type-date-working-in-firefox-and-or-ie-10 -->
         <!-- cdn for modernizr, if you haven't included it already -->
@@ -111,10 +111,10 @@
             /* apply webshims for dynamically added form */
             $('form').updatePolyfill();
 
-          odoo.define('website_event_attendee_fields.registration_attendee_details', function(require){
+          flectra.define('website_event_attendee_fields.registration_attendee_details', function(require){
             require('website_event_attendee_fields.registration_form');
 
-            odoo.registration_form_init();
+            flectra.registration_form_init();
 
             (function(){
                 var event_id = <t t-esc="event.id" />;
@@ -122,13 +122,13 @@
                 /* process line with autofilled email */
                 var $input = $("input[name='1-email']");
                 if ($input.val()){
-                    odoo.registration_form_onchange_email($input, event_id);
+                    flectra.registration_form_onchange_email($input, event_id);
                 }
 
 
                 /* handle changing email field */
                 $('.email').bind('change', function(e){
-                    odoo.registration_form_onchange_email(e.target, event_id);
+                    flectra.registration_form_onchange_email(e.target, event_id);
                 })
 
              })()
@@ -176,4 +176,4 @@
         </style>
         </xpath>
     </template>
-</odoo>
+</flectra>

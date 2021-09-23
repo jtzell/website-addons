@@ -21,4 +21,4 @@ Further information
 ===================
 
 
-Tested on `Odoo 8.0 <https://github.com/odoo/odoo/commit/bde083a5f91a659430b1227f240872f912f23c12>`_
+Tested on `Flectra 8.0 <https://github.com/flectra/flectra/commit/bde083a5f91a659430b1227f240872f912f23c12>`_

@@ -1,5 +1,5 @@
-OCA_server-tools https://github.com/it-projects-llc/server-tools.git
-OCA_web https://github.com/it-projects-llc/web
-access-addons https://github.com/it-projects-llc/access-addons.git
-mail-addons https://github.com/it-projects-llc/mail-addons
-misc-addons https://github.com/it-projects-llc/misc-addons
+FCA_server-tools https://gitlab.com/flectra-community/server-tools.git
+FCA_web https://gitlab.com/flectra-community/web
+access-addons https://github.com/itpp-labs/access-addons.git
+mail-addons https://github.com/itpp-labs/mail-addons
+misc-addons https://github.com/itpp-labs/misc-addons

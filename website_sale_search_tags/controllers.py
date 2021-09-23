@@ -1,7 +1,7 @@
-from odoo import http
-from odoo.http import request
+from flectra import http
+from flectra.http import request
 
-from odoo.addons.website_sale.controllers.main import WebsiteSale as controller
+from flectra.addons.website_sale.controllers.main import WebsiteSale as controller
 
 
 class WebsiteSale(controller):

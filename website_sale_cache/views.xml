@@ -1,6 +1,6 @@
 <!--Copyright 2017 Artyom Losev
     Copyright 2018 Kolushov Alexandr <https://it-projects.info/team/KolushovAlexandr>-->
-<odoo>
+<flectra>
     <data>
         <template
             id="category_cached"
@@ -40,4 +40,4 @@
             </t>
         </template>
     </data>
-</odoo>
+</flectra>

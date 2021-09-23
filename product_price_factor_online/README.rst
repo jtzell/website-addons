@@ -22,14 +22,14 @@ Contributors
 * Ildar Nasyrov <apps@it-projects.info>
 
       
-      This module is not maintained since Odoo 12.0      
+      This module is not maintained since Flectra 12.0      
 
 Further information
 ===================
 
-Odoo Apps Store: https://apps.odoo.com/apps/modules/11.0/product_price_factor_online/
+Flectra Apps Store: https://apps.flectra.com/apps/modules/11.0/product_price_factor_online/
 
 
-Notifications on updates: `via Atom <https://github.com/it-projects-llc/website-addons/commits/11.0/product_price_factor_online.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/it-projects-llc/website-addons/commits/11.0/product_price_factor_online.atom>`_
+Notifications on updates: `via Atom <https://github.com/itpp-labs/website-addons/commits/11.0/product_price_factor_online.atom>`_, `by Email <https://blogtrottr.com/?subscribe=https://github.com/itpp-labs/website-addons/commits/11.0/product_price_factor_online.atom>`_
 
-Tested on `Odoo 11.0 <https://github.com/odoo/odoo/commit/dc61861f90d15797b19f8ebddfb0c8a66d0afa88>`_
+Tested on `Flectra 11.0 <https://github.com/flectra/flectra/commit/dc61861f90d15797b19f8ebddfb0c8a66d0afa88>`_

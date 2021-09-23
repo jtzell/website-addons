@@ -3,19 +3,21 @@
 import hashlib
 from random import choice
 
-from odoo import SUPERUSER_ID, api, fields, models
-from odoo.tools import pycompat
+from flectra import SUPERUSER_ID, api, fields, models
+from flectra.tools import pycompat
 
 
 def _attachment2url(att):
-    sha = hashlib.md5(pycompat.to_text(att.datas).encode("utf-8")).hexdigest()[0:7]
+    sha = hashlib.md5(pycompat.to_text(
+        att.datas).encode("utf-8")).hexdigest()[0:7]
     return "/web/image/{}-{}".format(att.id, sha)
 
 
 class IRAttachmentBackground(models.Model):
     _inherit = "ir.attachment"
 
-    use_as_background = fields.Boolean("Use as login page background", default=False)
+    use_as_background = fields.Boolean(
+        "Use as login page background", default=False)
 
     @api.onchange("use_as_background")
     def _onchange_use_as_background(self):

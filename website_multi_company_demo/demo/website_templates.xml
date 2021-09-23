@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<odoo>
+<flectra>
     <template id="aboutus" inherit_id="website.aboutus">
         <!-- FIXME: this doesn't work when translation is activated -->
         <xpath
@@ -10,4 +10,4 @@
             <p>We sell only goods that we love ourselves! Enjoy!</p>
         </xpath>
     </template>
-</odoo>
+</flectra>

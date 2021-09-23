@@ -1,4 +1,4 @@
-from odoo import models
+from flectra import models
 
 
 class ProductPublicCategory(models.Model):
@@ -12,7 +12,8 @@ class ProductPublicCategory(models.Model):
             return
 
         self.search([("website_ids", "=", False)]).write(
-            {"website_ids": [(4, self.env.ref("website.default_website").id, 0)]}
+            {"website_ids": [
+                (4, self.env.ref("website.default_website").id, 0)]}
         )
 
         self.env["ir.config_parameter"].set_param(IS_INITED, "1")
